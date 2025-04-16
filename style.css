@@ -1,0 +1,158 @@
+body {
+    margin: 0;
+
+    header {
+        background-color: #041535;
+        margin: 0;
+        width: auto;
+        height: 100px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        .header-nav {
+            height: auto;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            a {
+                padding: 24px;
+                width: auto;
+                height: 100%;
+                font: 24px Roboto, sans-serif;
+                text-decoration: none;
+                color: white;
+            }
+        }
+    }
+
+    main {
+        width: auto;
+        height: auto;
+        .Accueil{
+            height: 670px;
+            margin-left: 200px;
+        }
+        .Accueil-profil {
+            background-image: url(image/main-accueil-picture.png);
+            background-repeat: no-repeat;
+            background-size: auto;
+            background-attachment: scroll;
+            height: 500px;
+        }
+
+        .Accueil-profil-logo {
+            margin-left: 0px;
+            height: auto;
+            width: 250px;
+
+            img {
+                margin: 100px 50px;
+                width: 80px;
+            }
+        }
+
+        .Accueil-profil-title {
+            margin-left: 0px;
+            width: 500px;
+
+            h1 {
+                font: 55px Roboto, sans-serif;
+                font-weight: bold;
+                height: auto;
+                margin: 5px 0;
+                background: linear-gradient(to right, #041535, #a0d8fc);
+                background-clip: text;
+                -webkit-background-clip: text;
+                -webkit-text-fill-color: transparent;
+            }
+        }
+
+        .Accueil-profil-description {
+            margin-left: 0px;
+            width: 635px;
+
+            p {
+                font: 35px Roboto, sans-serif;
+                font-weight: bold;
+                width: auto;
+                height: auto;
+                margin: 20px 0px;
+                margin-bottom: 50px;
+            }
+        }
+
+        .Accueil-profil-contener-realisation {
+            display: flex;
+            justify-content: flex-end;
+            background: linear-gradient(to right, #041535, #a0d8fc);
+
+            .main-realisation {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                padding: 0;
+                width: 50%;
+                height: 150px;
+
+                a {
+                    padding: 24px;
+                    font: 28px Roboto, sans-serif;
+                    background-color: #041535;
+                    text-decoration: none;
+                    color: rgb(255, 255, 255);
+                    width: auto;
+                    height: 30px;
+                    border-radius: 10px;
+                }
+            }
+        }
+
+        #profil {
+            background-color: #a0d8fc;
+            .profil-title {
+                display: flex;
+                justify-content: center;
+                h1 {
+                    margin: 20px 0;
+                }
+            }
+
+            .profil-conteneur {
+                display: flex;
+                height: 400px;
+                .profil-image {
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    width: 50%;
+
+                    img {
+                        width: 300px;
+                        height: 300px;
+                    }
+                }
+
+                .profil-descriptif {
+                    width: 50%;
+                    margin: 10px 0px;
+                    p {
+                        font-size: 20px;
+                        margin: 30px 20px;
+                    }
+                }
+            }
+            .profil-conteneur-widget{
+                background-image: url(image/profil-bubbles-4.png);
+                background-repeat: no-repeat;
+                background-position: center center;
+                background-size: auto;
+                background-attachment: scroll;
+                height: 474px;
+                padding: 32px;
+            }
+        }
+    }
+}
+
