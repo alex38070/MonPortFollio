@@ -35,7 +35,12 @@ body {
             display: flex;
             justify-content: center;
             align-items: center;
-
+            background-image: url(image/bubbles-header-2.png);
+            background-repeat: no-repeat;
+            background-position: center center;
+            background-size: auto;
+            background-attachment: scroll;
+        
         }
 
         .Accueil-profil {
@@ -115,13 +120,17 @@ body {
 
         #profil {
             background-color: #a0d8fc;
+            padding: 40px;
 
             .profil-title {
                 display: flex;
                 justify-content: center;
+                height: 100%;
+                font: 20x Roboto, sans-serif;
+                text-decoration: none;
 
-                h1 {
-                    margin: 20px 0;
+                h2 {
+                    margin: 0;
                 }
             }
 
@@ -136,8 +145,12 @@ body {
                     width: 50%;
 
                     img {
-                        width: 300px;
-                        height: 300px;
+                        width: 248px;
+                        height: 280px;
+                        border-style: solid;
+                        border-width: 2px 2px 2px 2px;
+                        border-color: #041535;
+                        border-radius: 25px 25px 25px 25px;
                     }
                 }
 
@@ -164,3 +177,4 @@ body {
         }
     }
 }
+
