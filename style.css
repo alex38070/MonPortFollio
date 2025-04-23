@@ -40,7 +40,7 @@ body {
             background-position: center center;
             background-size: auto;
             background-attachment: scroll;
-        
+
         }
 
         .Accueil-profil {
@@ -121,6 +121,11 @@ body {
         #profil {
             background-color: #a0d8fc;
             padding: 40px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 32px 32px 0 32px;
+
 
             .profil-title {
                 display: flex;
@@ -137,6 +142,8 @@ body {
             .profil-conteneur {
                 display: flex;
                 height: 400px;
+                width: 1200px;
+
 
                 .profil-image {
                     display: flex;
@@ -166,15 +173,88 @@ body {
             }
 
             .profil-conteneur-widget {
-                background-image: url(image/profil-bubbles-4.png);
+                /* background-image: url(image/profil-bubbles-4.png);
                 background-repeat: no-repeat;
                 background-position: center center;
                 background-size: auto;
-                background-attachment: scroll;
-                height: 474px;
+                background-attachment: scroll; */
+                height: auto;
+                width: auto;
                 padding: 32px;
+
+                height: auto;
+                width: auto;
+                padding: 0;
+                background-position: top center;
+
+                img {
+                    width: 1905px;
+                    height: auto;
+                    background-position: top center;
+                    margin: 0;
+                }
             }
         }
+
+        #competences {
+            background-color: #272828;
+            padding: 40px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+
+            .competences-title {
+                display: flex;
+                justify-content: center;
+                height: 100%;
+                font: 20x Roboto, sans-serif;
+                text-decoration: none;
+
+                h2 {
+                    margin: 0;
+                }
+            }
+        }
+
+        #portfolio {
+            background-color: #a0d8fc;
+            padding: 40px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+
+            .portfolio-title {
+                display: flex;
+                justify-content: center;
+                height: 100%;
+                font: 20x Roboto, sans-serif;
+                text-decoration: none;
+
+                h2 {
+                    margin: 0;
+                }
+            }
+        }
+
+        #contact {
+            background-color: #a0d8fc;
+            padding: 40px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+
+            .contact-title {
+                display: flex;
+                justify-content: center;
+                height: 100%;
+                font: 20x Roboto, sans-serif;
+                text-decoration: none;
+
+                h2 {
+                    margin: 0;
+                }
+            }
+        }
+
     }
 }
-
