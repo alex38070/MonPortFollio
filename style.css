@@ -156,7 +156,7 @@ body {
 
                     img {
                         width: 248px;
-                        height: 280px;
+                        height: 240px;
                         border-style: solid;
                         border-width: 2px 2px 2px 2px;
                         border-color: #041535;
@@ -181,6 +181,7 @@ body {
                 width: 1905px;
                 height: auto;
 
+
                 .profil-conteneur-widget-Zone {
                     padding-left: 350px;
                     padding-right: 350px;
@@ -197,7 +198,11 @@ body {
                     width: 33.333%;
                     margin: 20px;
                     border-radius: 16px;
-                    background-color: #9d9d9d;
+                    background-color: #ffffff;
+                    border-style: solid;
+                    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.5);
+                    transition: background 0.3s, border 0.3s, border-radius 0.3s, box-shadow 0.3s;
+                    line-height: 1.85714285714286;
 
                     h3 {
                         color: #041535;
@@ -207,11 +212,12 @@ body {
                     }
 
                     p {
-                        margin-bottom: 1.6em;
+                        margin: 0;
                         text-align: center;
                         color: #000000;
                         font-size: large;
                     }
+
 
                     .profil-conteneur-widget-i {
                         display: flex;
@@ -219,7 +225,8 @@ body {
                         align-items: center;
                         background-color: #041535;
                         width: 90px;
-                        height: 90px;                        display: flex;
+                        height: 90px;
+                        display: flex;
                         border-radius: 100px;
 
 
