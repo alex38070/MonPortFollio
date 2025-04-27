@@ -1,10 +1,59 @@
 body {
     margin: 0;
+    font: Roboto, sans-serif;
+
+    h1 {
+        font-size: 55px;
+        font-weight: bold;
+        height: auto;
+        margin: 5px 0;
+        background: linear-gradient(to right, #041535, #a0d8fc);
+        background-clip: text;
+        width: fit-content;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
+
+    h2 {
+        font-size: 2.4rem;
+        margin: 0;
+        text-align: center;
+        width: fit-content;
+    }
+
+    h3 {
+        color: #041535;
+        font-family: "Roboto", Sans-serif;
+        font-size: 1.4rem;
+        font-weight: 600;
+        width: fit-content;
+    }
+
+    p {
+        font: 35px Roboto, sans-serif;
+        width: fit-content;
+        height: auto;
+        margin: 20px 0px;
+        margin-bottom: 50px;
+        width: fit-content;
+    }
+
+    a {
+        padding: 24px;
+        font: 28px Roboto, sans-serif;
+        background-color: #041535;
+        text-decoration: none;
+        color: rgb(255, 255, 255);
+        width: auto;
+        height: 30px;
+        border-radius: 10px;
+        width: fit-content;
+    }
+
 
     header {
         background-color: #041535;
         margin: 0;
-        width: auto;
         display: flex;
         justify-content: center;
         align-items: center;
@@ -14,10 +63,10 @@ body {
         z-index: 1000;
 
         .header-nav {
-
             a {
                 padding: 24px;
                 height: 100%;
+                width: 100%;
                 font: 24px Roboto, sans-serif;
                 text-decoration: none;
                 color: white;
@@ -26,85 +75,44 @@ body {
     }
 
     main {
-        width: auto;
-        height: 500px;
         padding-top: 100px;
-
-        h1 {
-            font: 55px Roboto, sans-serif;
-            font-weight: bold;
-            height: auto;
-            margin: 5px 0;
-            background: linear-gradient(to right, #041535, #a0d8fc);
-            background-clip: text;
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
-        }
-
-        h2 {
-            font-size: 2.4rem;
-            margin: 0;
-            text-align: center;
-        }
-
-        h3 {
-            color: #041535;
-            font-family: "Roboto", Sans-serif;
-            font-size: 1.4rem;
-            font-weight: 600;
-            
-        }
-
-        .Accueil {
-            margin-top: 0;
-            height: auto;
-            display: flex;
-            justify-content: center;
-            align-items: center;
+        
+        .Accueil-profil {
+            display:flex;
+            flex-direction: column;
             background-image: url(image/bubbles-header-2.png);
             background-repeat: no-repeat;
             background-position: center center;
             background-size: auto;
             background-attachment: scroll;
+            padding: 30px;
+            padding-left: 25%;
 
-        }
-
-        .Accueil-profil {
-            background-repeat: no-repeat;
-            background-size: auto;
-            background-attachment: scroll;
-            height: auto;
-            width: 1200px;
         }
 
         .Accueil-profil-logo {
             height: auto;
-            width: 250px;
-
+            width: fit-content;
             img {
-                margin: 20px 20px;
+                margin: 20px;
                 width: 70px;
             }
         }
 
         .Accueil-profil-title {
             margin-left: 0px;
-            width: 500px;
+            width: fit-content;
 
         }
 
         .Accueil-profil-description {
             margin-left: 0px;
-            width: 635px;
+            width: auto;
 
             p {
-                font: 35px Roboto, sans-serif;
                 font-weight: bold;
-                width: auto;
-                height: auto;
-                margin: 20px 0px;
-                margin-bottom: 50px;
             }
+
         }
 
         .Accueil-profil-contener-realisation {
@@ -120,16 +128,6 @@ body {
                 width: 50%;
                 height: 150px;
 
-                a {
-                    padding: 24px;
-                    font: 28px Roboto, sans-serif;
-                    background-color: #041535;
-                    text-decoration: none;
-                    color: rgb(255, 255, 255);
-                    width: auto;
-                    height: 30px;
-                    border-radius: 10px;
-                }
             }
         }
 
@@ -149,14 +147,13 @@ body {
                 height: 100%;
                 font: 20x Roboto, sans-serif;
                 text-decoration: none;
-                padding-top: 80px;
+                padding-bottom: 40px;
             }
 
             .profil-conteneur {
                 display: flex;
-                height: 400px;
-                width: 1200px;
-
+                height: 100%;
+                width: 100%;
 
                 .profil-image {
                     display: flex;
@@ -176,7 +173,8 @@ body {
 
                 .profil-descriptif {
                     width: 50%;
-                    margin: 10px 0px;
+                    margin: 0;
+                    height: 100%;
 
                     p {
                         font-size: 20px;
@@ -188,14 +186,15 @@ body {
             .profil-conteneur-widget {
                 /* background-image: url(image/bubbles-4.png); */
                 padding: 10px;
-                width: 1905px;
+                width: auto;
                 height: auto;
-
+                display: flex;
+                justify-content: center;
 
                 .profil-conteneur-widget-Zone {
-                    padding: 30px 350px;
+                    padding: 0;
+                    width: 80%;
                     display: flex;
-
                 }
 
                 .profil-conteneur-widget-Zone-slide {
@@ -327,5 +326,151 @@ body {
             }
         }
 
+    }
+
+    /* Responsive : écran moyen (tablette) */
+    @media (max-width: 1024px) {
+        main h1 {
+        font-size: 30px;
+        max-width: auto;
+        }
+        
+        main h2 {
+            font-size: 1.5rem;
+        }
+        
+        main h3 {
+            font-size: 0.8rem;
+        }
+        
+        .profil-conteneur {
+            flex-direction: column;
+            align-items: center;
+            height: auto;
+        }
+        
+        .profil-image,
+        .profil-descriptif {
+            width: 100%;
+        }
+            
+        .competences-section {
+            flex-direction: column;
+        }
+    }
+}
+
+/* Menu hamburger caché de base */
+.menu-toggle {
+    display: none;
+    background: none;
+    border: none;
+    font-size: 32px;
+    color: white;
+    cursor: pointer;
+    position: absolute;
+    left: 20px;
+    top: 30px;
+    z-index: 1100;
+}
+
+/* Mode mobile */
+@media (max-width: 768px) {
+    h1 {
+        font-size: 40px;
+        font-weight: bold;
+        height: auto;
+        width: auto;
+        margin: 5px 0;
+        background: linear-gradient(to right, #041535, #a0d8fc);
+        background-clip: text;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
+
+    h2 {
+        font-size: 30px;
+        margin: 0;
+        text-align: center;
+    }
+
+    h3 {
+        color: #041535;
+        font-size: 1.4rem;
+        font-weight: 600;
+    }
+
+    p {
+        font-size: 100px;
+        width: 100%;
+        height: 100%;
+        margin: 20px 0px;
+        margin-bottom: 50px;
+    }
+
+    a {
+        font: 200px;
+        width: auto;
+        height: 30px;
+        border-radius: 10px;
+        width: fit-content;
+    }
+
+    .header-nav {
+        display: none;
+        flex-direction: column;
+        background-color: #041535;
+        position: absolute;
+        top: 100px;
+        left: 0;
+        width: 100%;
+        text-align: center;
+        padding: 20px 0;
+    }
+
+    .header-nav.active {
+        display: flex;
+    }
+
+    .header-nav a {
+        padding: 10px;
+        font-size: 20px;
+    }
+    
+    .Accueil-profil-logo img {
+        width: 50px;
+        margin: 10px;
+    }
+
+    .Accueil-profil-description p {
+        font-size: 20px;
+    }
+
+    .main-realisation a {
+        font-size: 20px;
+    }
+
+    .profil-conteneur-widget-Zone {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .profil-conteneur-widget-Zone-slide {
+        width: auto;
+        padding: 0;
+        margin: 0;
+    }
+    .menu-toggle {
+        display: block;
+    }
+
+    @media (max-width: 570px) {
+
+        .main-realisation a {
+            font-size: 10px;
+            height: auto;
+            padding: 20px;
+        }
     }
 }

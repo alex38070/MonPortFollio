@@ -2,202 +2,182 @@
 <html lang="fr">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
-        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
-        crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <title>Mon Portfolio</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+    integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <title>Mon Portfolio</title>
 </head>
 
 <body>
-    <!-- https://antoinelbc.fr/ -->
+  <!-- ====== HEADER ====== -->
+  <header>
+    <button class="menu-toggle" id="menu-toggle">
+      ☰
+    </button>
+    <nav class="header-nav" id="header-nav">
+      <a href="#accueil"><strong>Accueil</strong></a>
+      <a href="#profil"><strong>Profil</strong></a>
+      <a href="#competences"><strong>Compétences</strong></a>
+      <a href="#portfolio"><strong>Portfolio</strong></a>
+      <a href="#contact"><strong>Contact</strong></a>
+    </nav>
+  </header>
 
-    <!-- ====== HEADER ====== -->
-    <header>
-        <nav class="header-nav">
-            <a href="#accueil"><strong>Accueil</strong></a>
-            <a href="#profil"><strong>Profil</strong></a>
-            <a href="#competences"><strong>Compétences</strong></a>
-            <a href="#portfolio"><strong>Portfolio</strong></a>
-            <a href="#contact"><strong>Contact</strong></a>
-        </nav>
-    </header>
+  <!-- ====== MAIN CONTENT ====== -->
+  <main>
 
-    <!-- ====== MAIN CONTENT ====== -->
-    <main>
+    <!-- ACCUEIL -->
+    <section id="accueil" class="Accueil">
+      <div class="Accueil-profil">
+        <div class="Accueil-profil-logo">
+          <img src="image/images.png" alt="Logo personnel" />
+        </div>
+        <div class="Accueil-profil-title">
+          <h1>Alexandre Feuvrier</h1>
+        </div>
+        <div class="Accueil-profil-description">
+          <h2>Développeur Full-Stack</h2>
+        </div>
+      </div>
+    </section>
 
-        <!-- ACCUEIL -->
-        <section id="accueil" class="Accueil">
-            <div class="Accueil-profil">
-                <div class="Accueil-profil-logo">
-                    <img src="image/images.png" alt="Logo personnel" />
-                </div>
-                <div class="Accueil-profil-title">
-                    <h1>Alexandre Feuvrier</h1>
-                </div>
-                <div class="Accueil-profil-description">
-                    <p>Développeur Full-Stack</p>
-                </div>
+    <!-- BOUTON REALISATION -->
+    <section class="Accueil-profil-contener-realisation">
+      <div class="main-realisation">
+        <a href="#portfolio">Découvrir mes réalisations</a>
+      </div>
+    </section>
+
+    <!-- PROFIL -->
+    <section id="profil">
+      <div class="profil-title">
+        <h2><strong>Qui suis-je</strong></h2>
+      </div>
+      <div class="profil-conteneur">
+        <div class="profil-image">
+          <img src="image/Photo CV - 3.png" alt="Portrait de moi" />
+        </div>
+        <div class="profil-descriptif">
+          <p>Bonjour, je suis Alexandre Feuvrier, développeur web junior et créateur de sites internet.</p>
+          <p>Reconverti dans le numérique depuis 2023, j’ai commencé à m’auto-former sur les langages HTML et CSS. En
+            2023, j’ai intégré un bootcamp (Get Into Tech avec Inco Academy) dans lequel j’ai pu consolider ces acquis
+            et travailler sur d’autres domaines (WordPress, SEO ou encore web design). J’ai par la suite suivi une
+            formation de 5 mois en développement web (3WA). Depuis août 2022, je suis à mon compte et travaille
+            notamment sur la création de sites via WordPress.</p>
+          <p>Passionné par le web, j’ai à cœur d’accompagner des entreprises ou des indépendants dans le développement
+            de leurs projets numériques et de les aider à accroître leur visibilité sur internet.</p>
+        </div>
+      </div>
+
+      <section class="profil-conteneur-widget">
+        <div class="profil-conteneur-widget-Zone">
+          <div class="profil-conteneur-widget-Zone-slide">
+            <div class="profil-conteneur-widget-i">
+              <i class="fa-sharp fa-solid fa-book-open" style="color: #ffffff;"></i>
             </div>
-        </section>
+            <h3>Le goût de l'apprentissage</h3>
+            <p>Autodidacte, je renforce mes connaissances et ma pratique en établissant une veille régulière et en me
+              formant par différentes ressources.</p>
+          </div>
 
-        <!-- BOUTON REALISATION -->
-        <section class="Accueil-profil-contener-realisation">
-            <div class="main-realisation">
-                <a href="#portfolio">Découvrir mes réalisations</a>
+          <div class="profil-conteneur-widget-Zone-slide">
+            <div class="profil-conteneur-widget-i">
+              <i class="fa-solid fa-diagram-project" style="color: #ffffff;"></i>
             </div>
-        </section>
+            <h3>Donner vie à un projet</h3>
+            <p>Le numérique offre la possibilité de transformer une simple idée en un projet concret. C’est un aspect
+              que j’apprécie particulièrement dans ce domaine.</p>
+          </div>
 
-        <!-- PROFIL -->
-        <section id="profil">
-            <div class="profil-title">
-                <h2><strong>Qui suis-je</strong></h2>
+          <div class="profil-conteneur-widget-Zone-slide">
+            <div class="profil-conteneur-widget-i">
+              <i class="fa-solid fa-lightbulb" style="color: #ffffff;"></i>
             </div>
-            <div class="profil-conteneur">
-                <div class="profil-image">
-                    <img src="image/Photo CV - 3.png" alt="Portrait de moi" />
-                </div>
-                <div class="profil-descriptif">
-                    <p>Bonjour, je suis Alexandre Feuvrier, développeur web junior et créateur de sites internet.</p>
-                    <p>Reconverti dans le numérique depuis 2023, j’ai commencé à m’auto-former sur les langages HTML et
-                        CSS. En
-                        2023, j’ai intégré un bootcamp (Get Into Tech avec Inco Academy) dans lequel j’ai pu consolider
-                        ces acquis
-                        et travailler sur d’autres domaines (WordPress, SEO ou encore web design). J’ai par la suite
-                        suivi une
-                        formation de 5 mois en développement web (3WA). Depuis août 2022, je suis à mon compte et
-                        travaille
-                        notamment sur la création de sites via WordPress.</p>
-                    <p>Passionné par le web, j’ai à cœur d’accompagner des entreprises ou des indépendants dans le
-                        développement
-                        de leurs projets numériques et de les aider à accroître leur visibilité sur internet.</p>
-                </div>
-            </div>
-            <section class="profil-conteneur-widget">
-                <div class="profil-conteneur-widget-Zone">
-                    <div class="profil-conteneur-widget-Zone-slide">
-                        <div class="profil-conteneur-widget-i">
-                            <i class="fa-sharp fa-solid fa-book-open" style="color: #ffffff;"></i>
-                        </div>
-                        <h3>Le goût de l'apprentissage</h3>
-                        <p>Autodidacte, je renforce mes connaissances et
-                            ma pratique en établissant une veille régulière
-                            et en me formant par différentes ressources.</p>
-                    </div>
-                    <div class="profil-conteneur-widget-Zone-slide">
-                        <div class="profil-conteneur-widget-i">
-                            <i class="fa-solid fa-diagram-project" style="color: #ffffff;"></i>
-                        </div>
-                        <h3>Donner vie à un projet</h3>
-                        <p>Le numérique offre la possibilité
-                            de transformer une simple idée en
-                            un projet concret. C’est un aspect
-                            que j’apprécie particulièrement dans
-                            ce domaine.</p>
-                    </div>
-                    <div class="profil-conteneur-widget-Zone-slide">
-                        <div class="profil-conteneur-widget-i">
-                            <i class="fa-solid fa-lightbulb" style="color: #ffffff;"></i>
-                        </div>
-                        <h3>Rien n'est impossible</h3>
-                        <p>Face aux problèmes, j’aime réfléchir
-                            et observer les différentes solutions
-                            possibles, en autonomie ou avec l’aide
-                            d’une communauté.</p>
-                    </div>
-                </div>
-            </section>
-        </section>
+            <h3>Rien n'est impossible</h3>
+            <p>Face aux problèmes, j’aime réfléchir et observer les différentes solutions possibles, en autonomie ou
+              avec l’aide d’une communauté.</p>
+          </div>
+        </div>
+      </section>
+    </section>
 
-        <!-- COMPÉTENCES -->
-        <section id="competences">
-            <div class="competences">
-                <h2><strong>Mes compétences</strong></h2>
-                <h3>Front-end</h3>
-                <div class="competences-section">
-                    <div class="competences-conteneur-widget">
-                        <p>HTML</p>
-                        <i aria-hidden="true" class="fab fa-css3-alt"></i>
-                    </div>
-                    <div class="competences-conteneur-widget">
+    <!-- COMPÉTENCES -->
+    <section id="competences">
+      <div class="competences">
+        <h2><strong>Mes compétences</strong></h2>
 
-                        <p>CSS</p>
-                        <i aria-hidden="true" class="fab fa-css3-alt"></i>
-                    </div>
-                    <div class="competences-conteneur-widget">
+        <h3>Front-end</h3>
+        <div class="competences-section">
+          <div class="competences-conteneur-widget">
+            <p>HTML</p>
+            <i class="fab fa-html5"></i>
+          </div>
+          <div class="competences-conteneur-widget">
+            <p>CSS</p>
+            <i class="fab fa-css3-alt"></i>
+          </div>
+          <div class="competences-conteneur-widget">
+            <p>SASS</p>
+            <i class="fab fa-sass"></i>
+          </div>
+          <div class="competences-conteneur-widget">
+            <p>JavaScript</p>
+            <i class="fab fa-js"></i>
+          </div>
+          <div class="competences-conteneur-widget">
+            <p>Blazor</p>
+            <i class="fas fa-brain"></i>
+          </div>
+        </div>
 
-                        <p>SASS</p>
-                        <i aria-hidden="true" class="fab fa-sass"></i>
-                    </div>
-                    <div class="competences-conteneur-widget">
-                        <p>JAVASCRIPT</p>
-                        <i aria-hidden="true" class="fab fa-js"></i>
-                    </div>
-                    <div class="competences-conteneur-widget">
-                        <p>BLAZOR</p>
-                        <i class="fas fa-brain"></i>
-                    </div>
-                </div>
+        <h3>Back-end</h3>
+        <div class="competences-section">
+          <div class="competences-conteneur-widget">
+            <p>.NET</p>
+            <i class="fas fa-database"></i>
+          </div>
+          <div class="competences-conteneur-widget">
+            <p>C#</p>
+            <i class="fas fa-code"></i>
+          </div>
+        </div>
 
-                <h3>Back-end</h3>
-                <div class="competences-section">
-                    <div class="competences-conteneur-widget">
-                        <p>.NET</p>
-                        <i aria-hidden="true" class="fab fa-css3-alt"></i>
-                    </div>
-                    <div class="competences-conteneur-widget">
-                        <p>C#</p>
-                        <i aria-hidden="true" class="fab fa-css3-alt"></i>
-                    </div>
-                    <div class="competences-conteneur-widget">
+        <h3>Base de données</h3>
+        <div class="competences-section">
+          <div class="competences-conteneur-widget">
+            <p>SQL</p>
+            <i class="fas fa-database"></i>
+          </div>
+        </div>
+      </div>
+    </section>
 
-                        <p>SASS</p>
-                        <i aria-hidden="true" class="fab fa-sass"></i>
-                    </div>
-                </div>
-                <h3>Base De Données</h3>
-                <div class="competences-section">
-                    <div class="competences-conteneur-widget">
-                        <p>HTML</p>
-                        <i aria-hidden="true" class="fab fa-css3-alt"></i>
-                    </div>
-                    <div class="competences-conteneur-widget">
+    <!-- PORTFOLIO -->
+    <section id="portfolio">
+      <h2><strong>Portfolio</strong></h2>
+      <!-- Cartes ou projets à venir -->
+    </section>
 
-                        <p>CSS</p>
-                        <i aria-hidden="true" class="fab fa-css3-alt"></i>
-                    </div>
-                    <div class="competences-conteneur-widget">
+    <!-- CONTACT -->
+    <section id="contact">
+      <h2><strong>Contact</strong></h2>
+      <!-- Formulaire de contact ou informations -->
+    </section>
 
-                        <p>SASS</p>
-                        <i aria-hidden="true" class="fab fa-sass"></i>
-                    </div>
-                    <div class="competences-conteneur-widget">
-                        <p>jAVASCRIPT</p>
-                        <i aria-hidden="true" class="fab fa-js"></i>
-                    </div>
-                    <div class="competences-conteneur-widget">
-                        <p>BLAZOR</p>
-                        <i class="fas fa-brain"></i>
-                    </div>
+  </main>
 
-                </div>
-            </div>
-        </section>
+  <!-- SCRIPT du menu hamburger -->
+  <script>
+    const toggleButton = document.getElementById('menu-toggle');
+    const nav = document.getElementById('header-nav');
 
-        <!-- PORTFOLIO -->
-        <section id="portfolio">
-            <h2><strong>Portfolio</strong></h2>
-            <!-- Cartes ou projets à venir -->
-        </section>
-
-        <!-- CONTACT -->
-        <section id="contact">
-            <h2><strong>Contact</strong></h2>
-            <!-- Formulaire de contact ou informations -->
-        </section>
-    </main>
+    toggleButton.addEventListener('click', () => {
+      nav.classList.toggle('active');
+    });
+  </script>
 </body>
 
 </html>
