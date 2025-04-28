@@ -1,16 +1,11 @@
 <!DOCTYPE html>
-<html lang="fr">
-
-<head>
-  <meta charset="UTF-8">
+<!-- saved from url=(0022)http://127.0.0.1:5500/ -->
+<html lang="fr"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="style.css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
-    integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
-    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="./Mon Portfolio_files/style.css">
+  <link rel="stylesheet" href="./Mon Portfolio_files/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer">
   <title>Mon Portfolio</title>
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
-
 </head>
 
 <body>
@@ -20,11 +15,11 @@
       ☰
     </button>
     <nav class="header-nav" id="header-nav">
-      <a href="#accueil"><strong>Accueil</strong></a>
-      <a href="#profil"><strong>Profil</strong></a>
-      <a href="#competences"><strong>Compétences</strong></a>
-      <a href="#portfolio"><strong>Portfolio</strong></a>
-      <a href="#contact"><strong>Contact</strong></a>
+      <a href="http://127.0.0.1:5500/#accueil"><strong>Accueil</strong></a>
+      <a href="http://127.0.0.1:5500/#profil"><strong>Profil</strong></a>
+      <a href="http://127.0.0.1:5500/#competences"><strong>Compétences</strong></a>
+      <a href="http://127.0.0.1:5500/#portfolio"><strong>Portfolio</strong></a>
+      <a href="http://127.0.0.1:5500/#contact"><strong>Contact</strong></a>
     </nav>
   </header>
 
@@ -35,7 +30,7 @@
     <section id="accueil" class="Accueil">
       <div class="Accueil-profil">
         <div class="Accueil-profil-logo">
-          <img src="image/images.png" alt="Logo personnel" />
+          <img src="./Mon Portfolio_files/images.png" alt="Logo personnel">
         </div>
         <div class="Accueil-profil-title">
           <h1>Alexandre Feuvrier</h1>
@@ -49,7 +44,7 @@
     <!-- BOUTON REALISATION -->
     <section class="Accueil-profil-contener-realisation">
       <div class="main-realisation">
-        <a href="#portfolio">Découvrir mes réalisations</a>
+        <a href="http://127.0.0.1:5500/#portfolio">Découvrir mes réalisations</a>
       </div>
     </section>
 
@@ -60,7 +55,7 @@
       </div>
       <div class="profil-conteneur">
         <div class="profil-image">
-          <img src="image/Photo CV - 3.png" alt="Portrait de moi" />
+          <img src="./Mon Portfolio_files/Photo CV - 3.png" alt="Portrait de moi">
         </div>
         <div class="profil-descriptif">
           <p>Bonjour, je suis Alexandre Feuvrier, développeur web junior et créateur de sites internet.</p>
@@ -169,61 +164,36 @@
     <!-- PORTFOLIO -->
     <section id="portfolio">
       <h2><strong>Portfolio</strong></h2>
-
+    
       <!-- Swiper -->
-      <div class="portfolio-container">
-        <div class="portfolio-wrapper">
-
+      <div class="swiper-container">
+        <div class="swiper-wrapper">
+          
           <!-- Slide 1 -->
-          <div class="portfolio-slide">
-            <img src="image/Portfolio.png" alt="Projet 1" />
-            <p>PORTFOLIO Version 1</p>
-            <button class="open-modal" data-modal="modal1">En savoir plus</button>
+          <div class="swiper-slide">
+            <img src="./Mon Portfolio_files/EcranCOMtechIT.png" alt="Projet 1">
+            <p>Projet Artenix (En cours)</p>
           </div>
-
-          <!-- Modal 1 -->
-          <div id="modal1" class="modal">
-            <div class="modal-content">
-              <span class="close">&times;</span>
-              <h2>PORTFOLIO Version 1</h2>
-              <p>Développement de la première version de mon portfolio, responsive et animé, utilisant HTML, CSS, et
-                JavaScript.</p>
-              <img src="image/Portfolio.png" alt="Détail du projet 1" style="width:100%; margin-top: 20px;">
-            </div>
-          </div>
-
+    
           <!-- Slide 2 -->
-          <div class="portfolio-slide">
-            <img src="image/EcranCOMtechIT.png" alt="Projet 2" />
-            <p>COMTechIT (Projet d'étude)</p>
-            <button class="open-modal" data-modal="modal2">En savoir plus</button>
+          <div class="swiper-slide">
+            <img src="./Mon Portfolio_files/EcranCOMtechIT.png" alt="Projet 2">
+            <p>Projet Arbonautes (Refonte)</p>
           </div>
-
-          <!-- Modal 2 -->
-          <div id="modal2" class="modal">
-            <div class="modal-content">
-              <span class="close">&times;</span>
-              <h2>COMTechIT</h2>
-              <p>Projet d'étude consistant à développer un site vitrine pour une société de services IT, avec
-                intégration d'un blog et formulaire de contact sécurisé.</p>
-              <img src="image/EcranCOMtechIT.png" alt="Détail du projet 2" style="width:100%; margin-top: 20px;">
-            </div>
-          </div>
-
-
+    
           <!-- Ajoute d'autres .swiper-slide ici -->
-
+          
         </div>
-
+    
         <!-- Flèches navigation -->
-        <div class="portfolio-button-prev"></div>
-        <div class="portfolio-button-next"></div>
-
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-button-next"></div>
+    
         <!-- Pagination points -->
-        <div class="portfolio-pagination"></div>
+        <div class="swiper-pagination"></div>
       </div>
     </section>
-
+    
     <!-- CONTACT -->
     <section id="contact">
       <h2><strong>Contact</strong></h2>
@@ -241,57 +211,45 @@
       nav.classList.toggle('active');
     });
   </script>
-  <script>
-    const swiper = new Swiper('.swiper-container', {
-      slidesPerView: 2,
-      spaceBetween: 30,
-      loop: true,
-      navigation: {
-        nextEl: '.swiper-button-next',
-        prevEl: '.swiper-button-prev',
-      },
-      pagination: {
-        el: '.swiper-pagination',
-        clickable: true,
-      },
-      breakpoints: {
-        768: {
-          slidesPerView: 2,
-        },
-        320: {
-          slidesPerView: 1,
-        }
-      }
-    });
-  </script>
-  <!-- SwiperJS JS -->
-  <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
-  <script>
-    // Ouvrir la modale
-    document.querySelectorAll('.open-modal').forEach(button => {
-      button.addEventListener('click', function() {
-        const modalId = this.getAttribute('data-modal');
-        document.getElementById(modalId).style.display = 'block';
-      });
-    });
-  
-    // Fermer la modale
-    document.querySelectorAll('.close').forEach(span => {
-      span.addEventListener('click', function() {
-        this.closest('.modal').style.display = 'none';
-      });
-    });
-  
-    // Fermer en cliquant dehors
-    window.addEventListener('click', function(event) {
-      document.querySelectorAll('.modal').forEach(modal => {
-        if (event.target === modal) {
-          modal.style.display = 'none';
-        }
-      });
-    });
-  </script>
-  
-</body>
+<!-- Code injected by live-server -->
+<script>
+	// <![CDATA[  <-- For SVG support
+	if ('WebSocket' in window) {
+		(function () {
+			function refreshCSS() {
+				var sheets = [].slice.call(document.getElementsByTagName("link"));
+				var head = document.getElementsByTagName("head")[0];
+				for (var i = 0; i < sheets.length; ++i) {
+					var elem = sheets[i];
+					var parent = elem.parentElement || head;
+					parent.removeChild(elem);
+					var rel = elem.rel;
+					if (elem.href && typeof rel != "string" || rel.length == 0 || rel.toLowerCase() == "stylesheet") {
+						var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, '');
+						elem.href = url + (url.indexOf('?') >= 0 ? '&' : '?') + '_cacheOverride=' + (new Date().valueOf());
+					}
+					parent.appendChild(elem);
+				}
+			}
+			var protocol = window.location.protocol === 'http:' ? 'ws://' : 'wss://';
+			var address = protocol + window.location.host + window.location.pathname + '/ws';
+			var socket = new WebSocket(address);
+			socket.onmessage = function (msg) {
+				if (msg.data == 'reload') window.location.reload();
+				else if (msg.data == 'refreshcss') refreshCSS();
+			};
+			if (sessionStorage && !sessionStorage.getItem('IsThisFirstTime_Log_From_LiveServer')) {
+				console.log('Live reload enabled.');
+				sessionStorage.setItem('IsThisFirstTime_Log_From_LiveServer', true);
+			}
+		})();
+	}
+	else {
+		console.error('Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading.');
+	}
+	// ]]>
+</script>
 
-</html>
+
+
+</body></html>

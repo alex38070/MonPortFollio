@@ -50,13 +50,6 @@ body {
         width: fit-content;
     }
 
-    button {
-        border-radius: 10px;
-        background-color: #041535;
-        font-size: large;
-        color: white;
-        width: auto;
-    }
 
     header {
         background-color: #041535;
@@ -83,9 +76,9 @@ body {
 
     main {
         padding-top: 100px;
-
+        
         .Accueil-profil {
-            display: flex;
+            display:flex;
             flex-direction: column;
             background-image: url(image/bubbles-header-2.png);
             background-repeat: no-repeat;
@@ -100,10 +93,9 @@ body {
         .Accueil-profil-logo {
             height: auto;
             width: fit-content;
-
             img {
                 margin: 20px;
-                width: 100px;
+                width: 70px;
             }
         }
 
@@ -116,9 +108,11 @@ body {
         .Accueil-profil-description {
             margin-left: 0px;
             width: auto;
+
             p {
                 font-weight: bold;
             }
+
         }
 
         .Accueil-profil-contener-realisation {
@@ -159,7 +153,7 @@ body {
             .profil-conteneur {
                 display: flex;
                 height: 100%;
-                width: 70%;
+                width: 100%;
 
                 .profil-image {
                     display: flex;
@@ -306,115 +300,72 @@ body {
             display: flex;
             flex-direction: column;
             align-items: center;
-
+          
             .portfolio-title {
-                display: flex;
-                justify-content: center;
-                height: 100%;
-                font: 20px Roboto, sans-serif;
-                text-decoration: none;
+              display: flex;
+              justify-content: center;
+              height: 100%;
+              font: 20px Roboto, sans-serif;
+              text-decoration: none;
             }
-
+          
             /* --- Swiper Specific --- */
-            .portfolio-container {
-                width: 80%;
-                max-width: auto;
-                margin: auto;
-                padding: 20px 0;
+            .swiper-container {
+              width: 80%;
+              max-width: 1200px;
+              margin: auto;
+              padding: 20px 0;
             }
-
-            .portfolio-wrapper {
-                display: flex;
-                justify-content: center;
-                gap: 20px;
+          
+            .swiper-wrapper {
+              display: flex;
             }
-
-            .portfolio-slide {
-                display: flex;
-                flex-direction: column;
-                align-items: center;
-                background: #041535;
-                border: 2px solid #041535;
-                border-radius: 10px;
-                overflow: hidden;
-                text-align: center;
-                padding: 10px;
-                transition: transform 0.3s ease, box-shadow 0.3s ease;
-
-                img {
-                    width: 100%;
-                    height: 300px;
-                    object-fit: cover;
-                    margin-bottom: 10px;
-                }
-
-                p {
-                    font-size: 20px;
-                    color: #ffffff;
-                    margin: 10px;
-                }
-
+          
+            .swiper-slide {
+              background: #ffffff;
+              border: 2px solid #041535;
+              border-radius: 10px;
+              overflow: hidden;
+              text-align: center;
+              padding: 10px;
+              transition: transform 0.3s ease, box-shadow 0.3s ease;
             }
-
-            .portfolio-slide:hover {
-                transform: translateY(-5px);
-                box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+          
+            .swiper-slide:hover {
+              transform: translateY(-5px);
+              box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
             }
-
+          
+            .swiper-slide img {
+              width: 100%;
+              height: auto;
+              object-fit: cover;
+              margin-bottom: 10px;
+            }
+          
+            .swiper-slide p {
+              font-size: 16px;
+              color: #041535;
+            }
+          
             /* --- Swiper Navigation Buttons --- */
-            .portfolio-button-prev,
-            .portfolio-button-next {
-                color: #041535;
-                font-weight: bold;
+            .swiper-button-prev,
+            .swiper-button-next {
+              color: #041535;
+              font-weight: bold;
             }
-
+          
             /* --- Swiper Pagination Dots --- */
-            .portfolio-pagination-bullet {
-                background: #041535;
+            .swiper-pagination-bullet {
+              background: #041535;
             }
-
-            .portfolio-pagination-bullet-active {
-                background: #ffffff;
-                border: 1px solid #041535;
+          
+            .swiper-pagination-bullet-active {
+              background: #ffffff;
+              border: 1px solid #041535;
             }
-        }
-
-        .modal {
-            display: none;
-            position: fixed;
-            z-index: 2000;
-            padding-top: 100px;
-            left: 0;
-            top: 0;
-            width: 100%;
-            height: 100%;
-            overflow: auto;
-            background-color: rgba(0, 0, 0, 0.6);
-        }
-
-        .modal-content {
-            background-color: #ffffff;
-            margin: auto;
-            padding: 20px;
-            border: 2px solid #041535;
-            border-radius: 10px;
-            width: 80%;
-            max-width: 600px;
-            text-align: center;
-        }
-
-        .close {
-            color: #aaa;
-            float: right;
-            font-size: 30px;
-            font-weight: bold;
-            cursor: pointer;
-        }
-
-        .close:hover,
-        .close:focus {
-            color: black;
-        }
+          }
+          
 
 
 
@@ -450,29 +401,29 @@ body {
     /* Responsive : écran moyen (tablette) */
     @media (max-width: 1024px) {
         main h1 {
-            font-size: 30px;
-            max-width: auto;
+        font-size: 30px;
+        max-width: auto;
         }
-
+        
         main h2 {
             font-size: 1.5rem;
         }
-
+        
         main h3 {
             font-size: 0.8rem;
         }
-
+        
         .profil-conteneur {
             flex-direction: column;
             align-items: center;
             height: auto;
         }
-
+        
         .profil-image,
         .profil-descriptif {
             width: 100%;
         }
-
+            
         .competences-section {
             flex-direction: column;
         }
@@ -555,7 +506,7 @@ body {
         padding: 10px;
         font-size: 20px;
     }
-
+    
     .Accueil-profil-logo img {
         width: 50px;
         margin: 10px;
@@ -580,7 +531,6 @@ body {
         padding: 0;
         margin: 0;
     }
-
     .menu-toggle {
         display: block;
     }
