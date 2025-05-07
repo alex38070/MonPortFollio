@@ -217,7 +217,7 @@ body {
     }
 
     .competences {
-      background-color: white;
+      background-color: rgb(236, 52, 52);
       padding: 40px;
       display: flex;
       flex-direction: column;
@@ -230,6 +230,8 @@ body {
 
       .competences-section {
         display: flex;
+        justify-content: center;
+        width: 70%;
         border-radius: 10px;
         border: 1px solid #041535;
         background-color: #041535;
