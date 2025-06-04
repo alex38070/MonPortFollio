@@ -529,9 +529,11 @@ body {
     .menu-toggle {
       display: block;
     }
-    .profil-conteneur{
+
+    .profil-conteneur {
       flex-direction: column !important;
     }
+
     .profil-conteneur-widget-Zone {
       flex-direction: column;
       align-items: center;
@@ -618,15 +620,18 @@ body {
     }
 
     .competences-conteneur-widget {
+      flex-direction: row !important;
+      justify-content: space-between !important;
       width: auto !important;
       padding: 0 !important;
       margin: 10px !important;
     }
 
-    .portfolio-wrapper{
+    .portfolio-wrapper {
       flex-direction: column;
     }
-    #portfolio{
+
+    #portfolio {
       padding: 0 !important;
     }
 
