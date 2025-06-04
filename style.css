@@ -142,10 +142,9 @@ body {
 
         .profil-image {
           display: flex;
-          justify-content: center;
+          justify-content: flex-end;
           align-items: center;
           width: 50%;
-
           img {
             width: 248px;
             height: 240px;
@@ -155,8 +154,9 @@ body {
         }
 
         .profil-descriptif {
-          width: 80%;
+          width: 60%;
           margin: 0;
+          padding: 0 10%;
 
           p {
             font-size: 20px;
