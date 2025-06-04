@@ -348,14 +348,17 @@ body {
       height: 100%;
       overflow: auto;
       background-color: rgba(0, 0, 0, 0.6);
-      p{
+
+      p {
         font-size: 20px;
         margin: 3px;
       }
-      h2{
+
+      h2 {
         text-align: center;
       }
-      a{
+
+      a {
         background-color: #a0d8fc;
         padding: 5px;
         font-size: 20px;
@@ -373,10 +376,11 @@ body {
       width: 80%;
       max-width: 600px;
       text-align: center;
-      img{
+
+      img {
         border: 2px solid #041535;
         margin-top: 0px;
-        }
+      }
     }
 
     .close {
@@ -501,5 +505,94 @@ body {
       margin: 0;
       padding: 0;
     }
+  }
+
+  @media (max-width: 700px) {
+    .Accueil-profil {
+      padding: 30px 0 30px 5% !important;
+    }
+
+    .menu-toggle {
+      display: block;
+    }
+
+    .header-nav {
+      display: none;
+      flex-direction: column;
+      background-color: #041535;
+      position: absolute;
+      top: 100px;
+      left: 0;
+      width: 100%;
+      text-align: center;
+      padding: 20px 0;
+
+      &.active {
+        display: flex;
+      }
+
+      a {
+        padding: 10px;
+        font-size: 20px;
+      }
+    }
+
+    .main-realisation {
+      height: 70px !important;
+      width: auto !important;
+
+      a {
+        width: auto !important;
+        font-size: 14px;
+        padding: 10px !important;
+      }
+    }
+
+    #profil {
+      padding: 0 !important;
+    }
+
+    .profil-conteneur {
+      width: auto !important;
+
+      P {
+        size: 6px;
+      }
+    }
+
+    .profil-descriptif {
+      width: auto !important;
+
+      P {
+        font-size: 12px !important;
+      }
+    }
+
+    .profil-conteneur-widget-Zone {
+      width: auto !important;
+    }
+
+    .profil-conteneur-widget-Zone-slide {
+      width: auto !important;
+      padding: auto !important;
+      margin: 10px !important;
+    }
+
+    .competences {
+      h3 {
+        font-size: 20px !important;
+      }
+
+      p {
+        font-size: 15px !important;
+      }
+    }
+
+    .competences-conteneur-widget {
+      width: auto !important;
+      padding: auto !important;
+      margin: 10px !important;
+    }
+
   }
 }
