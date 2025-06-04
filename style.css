@@ -81,7 +81,7 @@ body {
     .Accueil-profil {
       display: flex;
       flex-direction: column;
-      background-image: url(image/bubbles-header-2.png);
+      background-image: url(image/ImageFontEcranProfil.png);
       background-repeat: no-repeat;
       background-position: center center;
       background-size: auto;
