@@ -453,8 +453,12 @@ body {
     }
 
     .profil-descriptif {
-      width: 100%;
+      width: auto;
       text-align :center !important;
+      padding: 0px;
+      p{
+        width: 100%;
+      }
     }
 
     .competences-section {

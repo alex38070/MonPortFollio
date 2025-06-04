@@ -10,6 +10,7 @@
     crossorigin="anonymous" referrerpolicy="no-referrer" />
   <title>Mon Portfolio</title>
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
+  <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
 
 </head>
 
@@ -247,8 +248,9 @@
     <!-- CONTACT -->
     <section id="contact">
       <h2><strong>Contact</strong></h2>
-      <h3>Vous souhaitez travailler sur un projet ? Ou tout simplement parler de sujets relatifs au développement web ?
-      </h3>
+      <h3>Vous souhaitez travailler sur un projet ?
+        Ou tout simplement parler de sujets relatifs au
+        développement web ?</h3>
 
       <!-- Formulaire de contact ou informations -->
     </section>
@@ -256,15 +258,20 @@
   </main>
 
   <!-- SCRIPT du menu hamburger -->
+
   <script>
     const toggleButton = document.getElementById('menu-toggle');
     const nav = document.getElementById('header-nav');
 
     toggleButton.addEventListener('click', () => {
-      nav.classList.toggle('active');
+      nav.classList.add('active');
+
+      // Supprime la classe après 5 secondes (par exemple)
+      setTimeout(() => {
+        nav.classList.remove('active');
+      }, 3000); // 3000 millisecondes = 3 secondes
     });
-  </script>
-  <script>
+
     const swiper = new Swiper('.swiper-container', {
       slidesPerView: 2,
       spaceBetween: 30,
@@ -286,10 +293,7 @@
         }
       }
     });
-  </script>
-  <!-- SwiperJS JS -->
-  <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
-  <script>
+
     // Ouvrir la modale
     document.querySelectorAll('.open-modal').forEach(button => {
       button.addEventListener('click', function () {
@@ -297,14 +301,14 @@
         document.getElementById(modalId).style.display = 'block';
       });
     });
-
+    
     // Fermer la modale
     document.querySelectorAll('.close').forEach(span => {
       span.addEventListener('click', function () {
         this.closest('.modal').style.display = 'none';
       });
     });
-
+    
     // Fermer en cliquant dehors
     window.addEventListener('click', function (event) {
       document.querySelectorAll('.modal').forEach(modal => {
@@ -313,8 +317,9 @@
         }
       });
     });
-  </script>
-
+    
+    </script>
+  <!-- SwiperJS JS -->
 </body>
 
 </html>
