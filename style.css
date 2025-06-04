@@ -529,7 +529,9 @@ body {
     .menu-toggle {
       display: block;
     }
-
+    .profil-conteneur{
+      flex-direction: column
+    }
     .profil-conteneur-widget-Zone {
       flex-direction: column;
       align-items: center;
