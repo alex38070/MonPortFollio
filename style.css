@@ -454,9 +454,9 @@ body {
 
     .profil-descriptif {
       width: auto;
-      text-align :center !important;
+      text-align :normal !important;
       padding: 0px;
-      p{
+      h3{
         width: 100%;
       }
     }
