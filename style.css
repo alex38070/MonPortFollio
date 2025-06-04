@@ -530,7 +530,7 @@ body {
       display: block;
     }
     .profil-conteneur{
-      flex-direction: column;
+      flex-direction: column !important;
     }
     .profil-conteneur-widget-Zone {
       flex-direction: column;
