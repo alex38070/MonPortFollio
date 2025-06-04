@@ -18,8 +18,6 @@ body {
     margin: 0;
     text-align: center;
     width: fit-content;
-    margin-top: 20px;
-
   }
 
   h3 {
@@ -148,7 +146,6 @@ body {
           justify-content: flex-end;
           align-items: center;
           width: 50%;
-
           img {
             width: 248px;
             height: 240px;
@@ -434,7 +431,7 @@ body {
   }
 
   @media (max-width: 1250px) {
-    main h1 {
+        main h1 {
       font-size: 30px;
     }
 
@@ -457,18 +454,18 @@ body {
 
     .profil-descriptif {
       width: 100%;
-      text-align: center !important;
+      text-align :center !important;
     }
 
     .competences-section {
       flex-direction: column;
     }
 
-    /* .menu-toggle {
+    .menu-toggle {
       display: block;
-    } */
+    }
 
-    /* .header-nav {
+    .header-nav {
       display: none;
       flex-direction: column;
       background-color: #041535;
@@ -487,7 +484,7 @@ body {
         padding: 10px;
         font-size: 20px;
       }
-    } */
+    }
 
     .Accueil-profil-logo img {
       width: 50px;
@@ -525,8 +522,7 @@ body {
         font-size: 16px;
       }
     }
-
-    .competences-section {
+    .competences-section{
       width: 300px !important;
       align-items: stretch !important;
     }
@@ -548,94 +544,65 @@ body {
     }
   }
 
-  header {
-    height: 100px;
-  }
-
-  .Accueil-profil {
-    padding: 30px 5%;
-  }
-
-  .main-realisation {
-    height: 70px;
-
-    a {
-      font-size: 24px;
-      padding: 10px;
+    header {
+      height: 100px;
     }
-  }
 
-  #profil {
-    padding: 0px !important;
-  }
-
-  .profil-descriptif p {
-    font-size: 15px;
-  }
-
-  .competences h3,
-  .competences p {
-    font-size: 20px;
-  }
-
-  .profil-conteneur {
-    width: 100% !important;
-  }
-
-  .competences-conteneur-widget {
-    flex-direction: row !important;
-    width: auto !important;
-  }
-
-  #portfolio {
-    padding: 0 !important;
-  }
-
-  @media (max-width: 900px) {
-    .header-nav {
-      a {
-        font-size: 20px !important;
-      }
-    }
-  }
-
-  @media (max-width: 700px) {
-    .header {
-      display: flex;
+    .Accueil-profil {
+      padding: 30px 5%;
     }
 
     .main-realisation {
+      height: 70px;
+
       a {
-        font-size: 15px;
+        font-size: 24px;
         padding: 10px;
       }
     }
 
-    .header-nav {
-      a {
-        padding: 10px !important;
+    #profil {
+      padding: 0px !important;
+    }
+
+    .profil-descriptif p {
+      font-size: 15px;
+    }
+
+    .competences h3,
+    .competences p {
+      font-size: 20px;
+    }
+
+    .profil-conteneur {
+      width: 100% !important;
+    }
+
+    .competences-conteneur-widget {
+      flex-direction: row !important;
+      width: auto !important;
+    }
+
+    #portfolio {
+      padding: 0 !important;
+    }
+    
+
+    
+    @media (max-width: 650px){
+      .main-realisation {
+        a {
+          font-size: 15px;
+          padding: 10px;
+        }
+      }
+    }
+
+    .header-nav{
+      width: auto;
+      a{
         font-size: 15px !important;
-      }
-    }
-  }
-
-  @media (max-width: 400px) {
-    .header {
-      display: flex;
-    }
-
-    .main-realisation {
-      a {
-        font-size: 15px;
-        padding: 10px;
-      }
-    }
-
-    .header-nav {
-      a {
         padding: 5px !important;
-        font-size: 10px !important;
       }
     }
   }
-}
