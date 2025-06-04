@@ -576,6 +576,12 @@ body {
       width: auto !important;
       padding: auto !important;
       margin: 10px !important;
+      h3{
+        font-size: 20px !important;
+      }
+      p{
+        font-size: 16px !important;
+      }
     }
 
     .competences {
