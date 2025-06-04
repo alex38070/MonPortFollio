@@ -600,6 +600,8 @@ body {
 
     .header-nav{
       width: auto;
+      padding: 0px;
+      border-radius: 0 0 10px 0;
       a{
         font-size: 15px !important;
         padding: 5px !important;
