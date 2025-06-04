@@ -623,5 +623,12 @@ body {
       margin: 10px !important;
     }
 
+    .portfolio-wrapper{
+      flex-direction: column;
+    }
+    #portfolio{
+      padding: 0 !important;
+    }
+
   }
 }
